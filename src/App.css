@@ -1,17 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
 body {
-  background: #FFF;
-  color: #FFF;
-  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
 }
 
 .site-header {
-  position: absolute;
-  width: 1024px;
-  height: 64px;
-  left: 0px;
-  top: 0px;
-  background: #4A90E2;
+  background: #1877f2;
+  color: #fff;
+  height: 60px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
 
+.logo img {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-left: 10px;
+}
 
+.perfil-logo {
+  width: 40px;
+  height: 40px;
+
+  align-items: center;
+
+}
+
+.post-item {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 0 0.5rem 0.5rem 0.5rem
+}
+
+.post-item header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 1rem
+}
+
+.author {
+  margin: 0;
+  padding: 0;
+  font-size: 0.875em;
+  color: #010913;
+}
+
+.date {
+  font-size: 0.75em;
+  color: #666
+}
+
+.post-avatar {
+  padding: 0.25rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.post-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block
+}
+
+.post-content {
+  font-size: 0.75em;
+  padding-left: 0.5rem;
+  margin-left: 30px;
+  margin-bottom: 1rem
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 0.5rem
+}
+
+.comment div {
+  background: #f5f5f5;
+  border-radius: 4px;
+  padding: 0.5rem;
+  color: #222;
+  font-size: 0.625em;
+  display: block;
+  width: calc(100% - 59px)
+}
+
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  margin-left: 11px
+}
+
+.comment b {
+  display: block;
+}
+
+@media screen and ( min-width: 74em) {
+  .wrap {
+    width: 1050px;
+    margin: 0 auto;
+  }
+  .post-item {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto
+  }
+}

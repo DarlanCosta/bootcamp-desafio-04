@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Comment from './Comment';
 
 function PostItem({data}) {
   return(
@@ -15,17 +15,9 @@ function PostItem({data}) {
       </header>
       <div className="post-content">{data.content}</div>
       <div className="post-comments">
-
-      {data.comments.map(comment => (
-        <div key={comment.id} className="comment">
-          <img className="comment-avatar" src={comment.author.avatar} />
-          <div>
-            <b>{comment.author.name}</b>
-            <span>{comment.content}</span>
-          </div>
-        </div>
-      ))}   
-        
+        {data.comments.map(comment => (
+          <Comment key={comment.id} data={comment} />
+        ))}         
       </div>
     </div>
   );
