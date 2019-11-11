@@ -1,10 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Header extends Component {
-  render() {
-    return (
-      <h1>Heloo Darlan</h1>
-  )}
+
+function Header() {
+  return(
+    <>
+      <header className="site-header">
+        <h2>
+          Facebook
+        </h2>
+      </header>
+    </>
+  )
 }
 
 export default Header;
